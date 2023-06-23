@@ -688,7 +688,7 @@ frappe.model.set_value(cdt, cdn,'batch_no',d.batch_id);
         var d = locals[cdt][cdn];
         if (d.item_code) {
             frappe.call({
-                method: 'uniherb.uniherb.utils.fetch_recent_purchased_items',
+                method: 'medishine.medishine.utils.fetch_recent_purchased_items',
                 args: {
                     'item_code': d.item_code,
                 },

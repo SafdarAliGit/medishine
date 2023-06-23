@@ -1119,7 +1119,7 @@ frappe.ui.form.on('Sales Invoice Item', {
         var d = locals[cdt][cdn];
         if (d.item_code) {
             frappe.call({
-                method: 'uniherb.uniherb.utils.fetch_recent_soled_items',
+                method: 'medishine.medishine.utils.fetch_recent_soled_items',
                 args: {
                     'item_code': d.item_code,
                 },
